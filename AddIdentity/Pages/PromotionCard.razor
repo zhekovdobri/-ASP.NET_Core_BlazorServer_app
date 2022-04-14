@@ -1,0 +1,56 @@
+﻿@page "/promotioncard"
+<AuthorizeView>
+    <Authorized>
+        <div class="container" style="margin-bottom: 50px;">
+
+    <div class="row">
+        <div class="col-lg-6 offset-lg-3 text-justify mb-4">
+          
+                <h4 class="font-weight-bold mb-4 text-center">Jobzone supports sports and athletics</h4>
+                <p class="card-text">Jobzone has a strong local presence with more than 40 offices 
+                    nationwide in Norway, and we embrace our corporate social responsibility in the 
+                    local communities we operate in. We know that our commitment to social responsibility 
+                    goes beyond supporting local communities, which is why we are present in several arenas, 
+                    large and small, nationwide in Norway.</p>
+            
+        </div>
+    </div>
+
+    <div class="text-center bg-black opacity-50">
+        <img src="/images/sport.jpg" alt="sport" class="img-fluid">
+    </div>
+
+    <div class="col-lg-6 offset-lg-3">
+        <div class="card p-5" style="opacity: 0.7">
+                <div class="card-body">
+                    <h4 class="card-title font-weight-bold">Promoting sports and athletics talents</h4>
+
+                    <p class="card-text">Part of our corporate social responsibility is about promoting 
+                        sports and athletics as a healthy and inspiring arena for all ages and levels. 
+                        From time to time, we come across unique talents, whom we choose to sponsor, in 
+                        order to give them the opportunity to devote themselves to their discipline.
+ 
+                        Jobzone is currently sponsoring track and field event talents Amalie Iuel 
+                        (400 m hurdles) and Elisabeth Slettum (sprints), and world champion in the 
+                        400 m hurdles, Karsten Warholm.
+                    </p>
+                    <a href="https://jobzone.no/om-oss/vi-hjelper-deg-med-a-finne-din-neste-jobb/" 
+                        class="card-link text-danger font-weight-bold"> ˃ Learn more about how Jobzone 
+                        has followed Karsten Warholm
+                    </a>
+                </div>
+        </div>
+    </div>
+
+</div>
+    </Authorized>
+
+     <NotAuthorized>
+        <StartCarousel />
+     </NotAuthorized>
+
+</AuthorizeView>
+
+@code {
+
+}

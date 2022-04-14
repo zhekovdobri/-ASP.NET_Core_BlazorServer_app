@@ -1,0 +1,27 @@
+﻿@page "/header"
+<AuthorizeView>
+    <Authorized>
+        <div class="hero-container">
+            <div class="hero">
+                <div class="image-text-right text-md-left img-fluid"> 
+                    Work where you are at your best
+                </div>
+            </div>
+            <div class="hero-stuff">
+                <h1>Your vision<br>our mission</h1>
+                <a href="https://jobzone.no/en/articles/the-right-person-in-the-right-place/" class="btn">Employees</a>
+                <a href="https://jobzone.no/en" class="btn">Companies</a>
+             </div>
+        </div>
+    </Authorized>
+        
+
+    <NotAuthorized>
+        <StartCarousel />
+    </NotAuthorized>
+</AuthorizeView>
+
+
+@code {
+  
+}

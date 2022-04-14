@@ -1,0 +1,18 @@
+﻿@inherits LayoutComponentBase
+
+<div class="page">
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+    <div class="main">
+        <div class="top-row px-4">
+            <img class="navbar-brand logo" src="/images/logo.png">
+            <LoginDisplay /> 
+            <a href="https://jobzone.no/en/om-oss/organization/" target="_blank">About 🕮</a>
+        </div>
+
+        <div class="content px-4">
+            @Body
+        </div>
+    </div>
+</div>

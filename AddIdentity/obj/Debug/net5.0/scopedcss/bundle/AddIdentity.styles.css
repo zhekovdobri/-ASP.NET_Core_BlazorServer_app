@@ -1,0 +1,215 @@
+/* _content/AddIdentity/Pages/Header.razor.rz.scp.css */
+.hero-container[b-cdknf5g3bi] {
+    height: 60vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+ .text-md-left[b-cdknf5g3bi] {
+    font-size: 38px;
+    position: absolute;
+    padding: 20px;
+    font-weight: 600;
+    border: 2px solid #fff;
+    word-break: normal;
+    color: white;
+    bottom: 30%;
+    right: 25%;
+    left: auto;
+    width: 25%;
+}
+
+.hero[b-cdknf5g3bi] {
+    background: url('/images/header.jpg') no-repeat center center;
+    background-size: cover;
+    height: 95%;
+    width: 100%;
+    padding: 40px;
+    transition: transform 2s;
+}
+
+    .hero:hover[b-cdknf5g3bi] {
+        transform: scale(1.15);
+    }
+
+.hero-stuff[b-cdknf5g3bi] {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+h1[b-cdknf5g3bi] {
+    font-size: 55px;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+a.btn[b-cdknf5g3bi] {
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    padding: 11px 30px;
+    background-color: #636363;
+    background-image: linear-gradient(to bottom,#636363,#000);
+    color: #fff;
+    text-transform: uppercase;
+}
+
+    a.btn:hover[b-cdknf5g3bi] {
+        background-image: linear-gradient(to bottom,#fff,#fff);
+        color: black;
+
+    }
+
+p[b-cdknf5g3bi] {
+    font-family: sans-serif;
+}
+
+
+/* _content/AddIdentity/Shared/MainLayout.razor.rz.scp.css */
+.page[b-p8w0xi74x4] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.main[b-p8w0xi74x4] {
+    flex: 1;
+}
+
+.sidebar[b-p8w0xi74x4] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.top-row[b-p8w0xi74x4] {
+    background-color: #f7f7f7;
+    /*border-bottom: 1px solid #d6d5d5;*/
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    color: #bf311a;
+}
+
+    .top-row[b-p8w0xi74x4]  a, .top-row .btn-link[b-p8w0xi74x4] {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+        color: #bf311a;
+    }
+
+    .top-row a:first-child[b-p8w0xi74x4] {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #bf311a;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-p8w0xi74x4] {
+        display: none;
+    }
+
+    .top-row.auth[b-p8w0xi74x4] {
+        justify-content: space-between;
+    }
+
+    .top-row a[b-p8w0xi74x4], .top-row .btn-link[b-p8w0xi74x4] {
+        margin-left: 0;   
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-p8w0xi74x4] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-p8w0xi74x4] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-p8w0xi74x4] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .main > div[b-p8w0xi74x4] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+    .navbar-brand logo[b-p8w0xi74x4] {
+        width: 72px;
+        height: 72px;  
+    }
+}
+/* _content/AddIdentity/Shared/NavMenu.razor.rz.scp.css */
+.navbar-toggler[b-yjbk2q2e4f] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row[b-yjbk2q2e4f] {
+    height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.navbar-brand[b-yjbk2q2e4f] {
+    font-size: 1.1rem;
+}
+
+.oi[b-yjbk2q2e4f] {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+.nav-item[b-yjbk2q2e4f] {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type[b-yjbk2q2e4f] {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type[b-yjbk2q2e4f] {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item[b-yjbk2q2e4f]  a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+.nav-item[b-yjbk2q2e4f]  a.active {
+    background-color: rgba(255,255,255,0.25);
+    color: white;
+}
+
+.nav-item[b-yjbk2q2e4f]  a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-yjbk2q2e4f] {
+        display: none;
+    }
+
+    .collapse[b-yjbk2q2e4f] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+}

@@ -1,0 +1,99 @@
+﻿@page "/vacancies"
+@using AddIdentity.Pages
+
+<AuthorizeView>
+    <Authorized>
+        <h3 class="text-center font-weight-bold py-5">Vacant Positions</h3>
+<hr class="my-5"/>
+<div class="container">
+
+<!--Job position Section first row-->
+    <div class="row m-3">
+
+        <div class="col-sm-4" style="width: 20rem;">
+            <JobCard Image="/images/image7.jpg" 
+                Title="Rørlegger" 
+                Place="Ålesund" 
+                Count="4" 
+                Deadline="Soon!" 
+                Link="https://jobzone.no/en/vacancies/67416">
+            </JobCard>
+        </div>
+
+        <div class="col-sm-4">
+            <JobCard Image="/images/image8.jpg" 
+                Title="Kantineassistent" 
+                Place="Oslo" 
+                Count="1" 
+                Deadline="Soon!" 
+                Link="https://jobzone.no/en/vacancies/67945">
+            </JobCard>
+        </div>
+
+        <div class="col-sm-4">
+            <JobCard Image="/images/image9.jpg" 
+                Title="Produksjonsmedarbeider" 
+                Place="Mosjøen" 
+                Count="1" 
+                Deadline="29.04.22" 
+                Link="https://jobzone.no/en/vacancies/67946">
+            </JobCard>
+        </div>
+    </div>
+
+<!--Job position Section second row-->
+    <div class="row m-3">
+
+        <div class="col-sm-4" style="width: 20rem;">
+            <JobCard Image="/images/image10.jpg" 
+                Title="Regnskapsmedarbeider" 
+                Place="Straume" 
+                Count="1" 
+                Deadline="SOON!" 
+                Link="https://jobzone.no/en/vacancies/67947">
+            </JobCard>
+        </div>
+
+        <div class="col-sm-4">
+            <JobCard Image="/images/image11.jpg" 
+                Title="Vi søker dyktige tømrere" 
+                Place="Trondheim" 
+                Count="2" 
+                Deadline="27.04.22" 
+                Link="https://jobzone.no/en/vacancies/67948">
+            </JobCard>
+        </div>
+
+        <div class="col-sm-4">
+            <JobCard Image="/images/image6.jpg" 
+                Title="Cost Controller - prosjekt" 
+                Place="Lyngdal" 
+                Count="1" 
+                Deadline="Soon!" 
+                Link="https://jobzone.no/en/vacancies/67940">
+            </JobCard>
+        </div>
+    </div>
+</div>
+
+<hr class="my-5"/>
+
+<div class="col text-center pt-2 mb-5">
+    <a href="https://jobzone.no/en/vacancies/" class="btn btn-outline-danger btn-lg 
+    font-weight-bold">View more Vacancies</a>
+</div>
+
+<!--Footer-->
+<Footer />
+    </Authorized>
+
+    <NotAuthorized>
+        <StartCarousel />
+    </NotAuthorized>
+
+</AuthorizeView>
+
+@code {
+
+}
+

@@ -1,0 +1,113 @@
+﻿@page "/"
+@using Microsoft.AspNetCore.Components.Authorization
+@inject NavigationManager Navigation
+@inject TokenProvider TokenProvider
+
+
+<AuthorizeView>
+<Authorized>
+
+<!--Header Section-->
+<Header />
+
+<!--Information Section-->
+<InfoCard />
+
+<h3 class="text-center font-weight-bold py-5">Vacant Positions</h3>
+<div class="container">
+
+<!--Job position Section first row-->
+    <div class="row m-3">
+
+        <div class="col-sm-4">
+            <JobCard Image="/images/image1.jpg" 
+                Title="Terminal staff" 
+                Place="Gardermoen" 
+                Count="10" 
+                Deadline="01.05.22" 
+                Link="https://jobzone.no/en/vacancies/67916">
+            </JobCard>
+        </div>
+
+        <div class="col-sm-4">
+            <JobCard Image="/images/image2.jpg" 
+                Title="Warehouse staff" 
+                Place="Ytre Enebakk" 
+                Count="1" 
+                Deadline="Soon!" 
+                Link="https://jobzone.no/en/vacancies/67935">
+            </JobCard>
+        </div>
+
+        <div class="col-sm-4">
+            <JobCard Image="/images/image4.jpg" 
+                Title="Supervisor-painting" 
+                Place="Bergen" 
+                Count="1" 
+                Deadline="15.04.22" 
+                Link="https://jobzone.no/en/vacancies//67838">
+            </JobCard>
+        </div>
+    </div>
+
+<!--Job position Section second row-->
+    <div class="row m-3">
+
+        <div class="col-sm-4">
+            <JobCard Image="/images/image3.jpg" 
+                Title="Tires monitor" 
+                Place="Bodø" 
+                Count="5" 
+                Deadline="SOON!" 
+                Link="https://jobzone.no/en/vacancies//67925">
+            </JobCard>
+        </div>
+
+        <div class="col-sm-4">
+            <JobCard Image="/images/image5.jpg" 
+                Title="Do you want to be part..." 
+                Place="Ytre Enebakk" 
+                Count="1" 
+                Deadline="30.04.22" 
+                Link="https://jobzone.no/en/vacancies//67927">
+            </JobCard>
+        </div>
+
+        <div class="col-sm-4">
+            <JobCard Image="/images/image6.jpg" 
+                Title="Tømrer" 
+                Place="Bergen" 
+                Count="1" 
+                Deadline="27.04.22" 
+                Link="https://jobzone.no/en/vacancies//67901">
+            </JobCard>
+        </div>
+    </div>
+</div>        
+
+<div class="col text-center pt-2">
+    <a href="vacancies" class="btn btn-outline-danger btn-lg 
+    font-weight-bold">View more Vacancies</a>
+</div>
+
+<hr class="my-5"/>
+
+<!--Promotion Section-->
+<PromotionCard />
+
+<!-- Footer Section-->
+<Footer />
+
+</Authorized>
+<NotAuthorized>
+    <StartCarousel />
+    <!--
+        <a href="Identity/Account/Register">Register 🖉</a>
+        <a href="Identity/Account/Login">Login ⚿</a>
+    -->
+</NotAuthorized>
+</AuthorizeView>
+
+
+
+

@@ -1,0 +1,102 @@
+﻿@page "/about"
+<AuthorizeView>
+    <Authorized>
+        <section>
+    <div class="container-fluid">
+        
+    <div class="text-center text-light mb-md-3 py-4" style="background: rgb(0, 0, 255, 0.3)">
+        <h3 class="card-title">About Dobri Zhekov</h3>
+    </div>
+        <div class="row bg-light.bg-gradient">
+
+            <div class="col-lg-3 mb-4">
+               <img class="card-img-top" src="/images/passpic.png" alt="Card image cap">
+            </div>
+
+            <div class="col-lg-3 mb-4">
+                <p>
+                    Dobri Zhekov nicknamed “Insider78″ was born in 1978. One and only son of a 
+                    working, middle-class family, Zhekov was quickly ” brought up to speed ” through 
+                    life’s challanges and misfortunes. He earned his bachelor’s degree in Marketing 
+                    and Management from the International University College Albena in 2006. Then he 
+                    took his second bachelor’s degree in Business Management from D. A. Tsenov Academy 
+                    of Economics Svishtov. In 2021 he earned his third higher education as a Full Stack 
+                    Web Developer from Software Academy Net It.
+                </p>
+                <a href="https://www.linkedin.com/in/dobri-zhekov-838bb51b/" class="card-link text-danger">
+                    <i class="fab fa-linkedin"></i> Linkedin
+                </a>
+                <a href="https://github.com/zhekovdobri" class="card-link text-danger">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+            </div>
+
+            <div class="col-lg-6" style="background-color: rgba(0, 0, 0, 0.05);">
+                <h4 class="my-2">Education</h4>
+            
+
+            <div class="row">
+                
+            <div class="col-lg-4">
+                <div class="card">
+                    
+                        <img class="card-img-top" src="/images/svishtov.jpg" alt="Card image cap">
+                        <div class="card-body">
+                        <p class="card-text">D. А. Tsenov Academy of Economics is a leading economics and 
+                            business higher education institution in Svishtov, Bulgaria with more than 83 
+                            years of history, 145 000 alumni and a well-established reputation in education, 
+                            science and project management.</p>
+                            <a href="https://www-uni--svishtov-bg.translate.goog/en/about-university/profile-0/the-history-of-the-academy-of-economics?_x_tr_sl=bg&_x_tr_tl=en&_x_tr_hl=no&_x_tr_pto=nui,sc" 
+                            class="card-link text-danger">Learn more</a>
+                        </div>
+                
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    
+                        <img class="card-img-top" src="/images/albena.jpg" alt="Card image cap">
+                        <div class="card-body">
+                        <p class="card-text">University College Albena - VUM was founded as Bulgarian-Dutch Institute 
+                            of Management. VUM was the first private higher school to teach its subjects entirely in 
+                            English language and to offer joint degrees. The first higher school in Bulgaria 
+                            to apply BBL methods. 
+                            </p>
+                            <a href="https://vum.bg/history/" class="card-link text-danger">Learn more</a>
+                        </div>
+                  
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    
+                        <img class="card-img-top" src="/images/netit.jpg" alt="Card image cap">
+                        <div class="card-body">
+                        <p class="card-text">Net It is a private educational company established in 2014 with funding from 
+                            the European Employment Agency. Net It has four academies: Marketing, Design, Software and 
+                            Accounting. It is an "Incubator" for freelancers, as well as a licensed career center,</p>
+                            <a href="http://netit.bg/" class="card-link text-danger">Learn more</a>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+       
+
+    <Footer />
+    </div>
+</section>
+    </Authorized>
+    <NotAuthorized>
+        <StartCarousel />
+    </NotAuthorized>
+</AuthorizeView>
+
+
+@code {
+
+}

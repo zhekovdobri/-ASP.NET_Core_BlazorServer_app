@@ -1,0 +1,48 @@
+﻿@page "/jobcard"
+<AuthorizeView>
+    <Authorized>
+        <div class="card">
+            <img src="@Image" class="card-img-top" alt="employ">
+            <div class="card-body">
+                <h5 class="card-title font-weight-bold">@Title</h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Place:@Place</li>
+                    <li class="list-group-item">Number of positions:@Count</li>
+                    <li class="list-group-item">Application deadline:@Deadline</li>
+                </ul>
+                <div class="col text-center pt-2">
+                    <a href="@Link" class="btn btn-danger w-100">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </Authorized>
+
+        <NotAuthorized>
+            <StartCarousel />
+        </NotAuthorized>
+
+</AuthorizeView>
+
+
+
+@code {
+
+    [Parameter]
+    public string Image { get; set; }
+
+    [Parameter] 
+    public string Title { get; set; }
+
+    [Parameter] 
+    public string Place { get; set; }
+
+    [Parameter] 
+    public int Count { get; set; }
+
+    [Parameter] 
+    public string Deadline { get; set; }
+
+    [Parameter]
+    public string Link { get; set; }
+
+}
