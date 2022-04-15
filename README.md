@@ -90,7 +90,7 @@ At last you can choose which components will be "Authorized" for the users and w
 
 ## Directory structure:
 
-<img alt="chart" src="https://github.com/zhekovdobri/-ASP.NET_Core_BlazorServer_app/blob/main/AddIdentity/wwwroot/images/Blazor_Server_Directory_structure.png">
+<img alt="chart" src="https://github.com/zhekovdobri/-ASP.NET_Core_BlazorServer_app/blob/main/AddIdentity/wwwroot/images/BlazorServer_Directory_structure.png">
 
 ## Setup/Installation Requirements
 
