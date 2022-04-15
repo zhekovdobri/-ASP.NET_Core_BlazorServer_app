@@ -77,7 +77,7 @@ Next I created "RedirectToLogin.razor" component to redirect the users to the "L
 
 ## Directory structure:
 
-<img alt="chart" src="https://github.com/zhekovdobri/-ASP.NET_Core_BlazorServer_app/blob/main/AddIdentity/wwwroot/images/Blazor_Directory_structure.jpg">
+<img alt="chart" src="https://github.com/zhekovdobri/-ASP.NET_Core_BlazorServer_app/blob/main/AddIdentity/wwwroot/images/Blazor_Server_Directory_structure.png">
 
 ## Setup/Installation Requirements
 
