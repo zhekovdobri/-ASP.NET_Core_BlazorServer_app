@@ -54,16 +54,16 @@ Then into the "HOst.cshtml" the root page of my application I created and passed
 }
 ````
 Then I moved to "Import.razor" component to import the "namespace", This is the place where the "TokenProvider is located. After that I modified the "App.razor" code (the root component) in order to pass our token object. 
-
-* Injected the "TokenProvider"
-* Added "CascadingAuthenticationState"
-* Changed "RouteView" with "AuthorizeRouteView""
+```
+* Injected the "<TokenProvider>"
+* Added "<CascadingAuthenticationState>"
+* Changed "<RouteView>" with "<AuthorizeRouteView>"
 * Created the "TokenProvider parameter" with the name "InitialState".
-
+```
 Then into the "c#Start.cs I added:
 
 * "namspace" (the place where the "TokenProvider is located)
-* services.AddScoped<TokenProvider>();
+* `services.AddScoped<TokenProvider>();`
 * Adding "Authorization" and "Authentication" in the map section.
 * Mapping our pages with "endpoints.MapRazorPages();"
   
