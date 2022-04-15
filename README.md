@@ -69,25 +69,15 @@ Then into the "c#Start.cs I added:
   
 Next I created "RedirectToLogin.razor" component to redirect the users to the "Log in" page, and "Loging Display" component and add it to the "MainLayout.razor" component whch is the root layout of the component.   
 
-## Directory structure :
+</div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<div class=pull-right>
+<img align="right" alt="chart" height="100px" src="https://github.com/zhekovdobri/-ASP.NET_Core_BlazorServer_app/blob/main/AddIdentity/wwwroot/images/Directory_structure_logo.png">
+</div>
 
-          |── readme.md    
-          ├───assets
-          |     |      
-          |     |css──|media-query.css
-          |     |     |style.css
-          |     |img             
-          |     |foote_css──|style.css
-          |     |           |footer.css
-          |     |jquery──|jquery.js
-          |     |js__
-          |          |Orb.js
-          |          |canvasVektor.js
-          |          |js.js                    
-          |                                    
-          |     |libs/bootstrap-5.0.0-beta3-dist──|css                               
-          ├── index.html                          |js
-          └── license
+## Directory structure:
+
+<img alt="chart" src="https://github.com/zhekovdobri/-ASP.NET_Core_BlazorServer_app/blob/main/AddIdentity/wwwroot/images/Blazor_Server_Directory_structure.png">
 
 ## Setup/Installation Requirements
 
