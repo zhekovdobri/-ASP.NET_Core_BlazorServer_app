@@ -67,7 +67,20 @@ Then into the "c#Start.cs I added:
 * Adding "Authorization" and "Authentication" in the map section.
 * Mapping our pages with "endpoints.MapRazorPages();"
   
-Next I created "RedirectToLogin.razor" component to redirect the users to the "Log in" page, and "Loging Display" component and add it to the "MainLayout.razor" component whch is the root layout of the component.   
+Next I created "RedirectToLogin.razor" component to redirect the users to the "Log in" page, and "Loging Display" component and add it to the "MainLayout.razor" component whch is the root layout of the component. Now, to authorize/not authorize the component or content you have to wrap those into the next tags: 
+````
+    <AuthorizeView>
+        <Authorized>
+            <div>Your desire component or content</div>
+        </Authorized>
+        <NotAuthorized>
+            <div>You are not alowed here</div>
+        </NotAuthorized>
+    </AuthorizeView>
+````
+At last you can choose which components will be "Authorized" for the users and which components will be "Not Authorized". In my case I authorized all components. This way the users can access the app content only with authorisation(register and log in).
+        
+       
 
 </div>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
