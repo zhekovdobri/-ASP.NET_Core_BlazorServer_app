@@ -113,6 +113,6 @@ Next I created "RedirectToLogin.razor" component to redirect the users to the "L
 
 ## License
 
-Alexandragloss_Homepage_Fashion project is licensed under the GNU GPL 3 license.
+ASP.NET_Core_BlazorServer_app is licensed under the GNU GPL 3 license.
 
 <sub><sup>Copiright © 2016-2021 Dobri Zhekov All Rights Reserved</sup></sub>
