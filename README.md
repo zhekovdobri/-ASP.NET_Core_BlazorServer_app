@@ -92,6 +92,18 @@ Next I created "RedirectToLogin.razor" component to redirect the users to the "L
   
 * **Clone over SSH**<br>
   $ git clone (ssh://..)
+  
+## Getting started
+
+1. [Download and install Visual Studio)(https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio?view=vs-2022)
+* select "vs_community.exe for Visual Studio Community"
+
+2. Download GitHub repository
+
+3 Open Visual Studio
+* select "Open a project or solution"
+* navigate and open "AddIdentity.sln" file
+* 
 
 ## Known Bugs
 
